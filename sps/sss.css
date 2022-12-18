@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    background-image: url('bg.jpg');
+}
+#main{
+    position: absolute;
+    left: 40%;
+    top: 20px;
+    font-size: 35px;
+}
+.playerScore{
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+.computerScore{
+    position: absolute;
+    left: 40%;
+    top: 25%;
+}
+#pscore{
+    position: absolute;
+    left: 35%;
+    top: 95%;  
+}
+#cscore{
+    position: absolute;
+    left: 40%;
+    top: 99%;
+}
+#move{
+    position: absolute;
+    left: 22%;
+    top: 40%;
+    font-size: 40px;
+}
+#movesleft{
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    
+} 
+#stone{
+    position: absolute;
+    left: 20%;
+    top: 70%;
+}
+#paper{
+    position: absolute;
+    left: 30%;
+    top: 70%;
+}
+#scissor{
+    position: absolute;
+    left: 40%;
+    top: 70%;
+}

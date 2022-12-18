@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //    printing your name
+        console.log("sabith shas")
+        // adding 2 num in js
+        let a = 6
+        let b = 9
+        let n = a + b
+        console.log(n)
+        // find square root
+        var c = 8
+        var gg = Math.sqrt(c)
+        console.log(gg)
+
+        // area of triangle
+        var base = 6
+        var heigt = 4
+        var hb = 1 / 2 * base * heigt
+        console.log("area of triangle=", hb)
+
+        // swap 2 variable
+        // a = 5
+        // b = 8
+        // temp;
+        // temp = a;
+        // a = b;
+        // b = temp;
+        // b = a;
+        // console.log('The value of a after swapping: ${a}');
+        // console.log('The value of b after swapping: ${b}');
+
+        // js to km to mile
+
+        var kilometers = parseInt(prompt("Please enter kilometers:"));
+        var miles = kilometers / 1.6;
+        console.log(miles + " Miles");
+
+        // celcius to farehfit
+        const celsius = prompt("Enter a celsius value: ");
+        const fahrenheit = (celsius * 1.8) + 32
+        console.log("fahrenheit" + fahrenheit)
+
+        // area of circle
+        const pi = 3.14
+        r = 4
+        f = pi * r * r
+        console.log("area=" + f)
+
+        // name age
+        console.log("sabith", "22", "elathur")
+
+
+        // quadatric
+        const qudratic = () => {
+            let a = 5;
+            let b = 6;
+            let c = 1;
+            let qq = Math.sqrt((b * b) - 4 * a * c)
+            let ans1 = (-b + qq) / 2 * a
+            let ans2 = (-b - qq) / 2 * a
+            console.log(ans1)
+            console.log(ans2)
+        }
+        qudratic();
+
+        // check positive negative or zero
+
+        n = 10
+
+        if (n > 0) {
+            console.log("positive")
+        }
+        else if (n == 0) {
+            console.log("the number is zero")
+        }
+        else {
+            console.log("negative")
+        }
+
+        // checking even or odd
+
+        j = prompt("enther the number")
+
+        if (j % 2 == 0) {
+            console.log("even")
+        }
+        else {
+            console.log("odd")
+        }
+
+        // largest among three numbers
+
+
+
+
+        var p = 77;
+        var m = 66;
+        var c = 99;
+        if (p > m && p > c) {
+
+            console.log(p)
+
+        }
+        else if (m > c) {
+            console.log(m)
+        }
+
+
+        else {
+            console.log(c)
+        }
+
+        // check prime number
+
+        const number = parseInt(prompt("Enter a positive number: "));
+        let isPrime = true;
+
+
+        if (number === 1) {
+            console.log("1 is neither prime nor composite number.");
+        }
+
+
+        else if (number > 1) {
+
+
+            for (let i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                console.log('{number} is a prime number');
+            } else {
+                console.log('{number} is a not prime number');
+            }
+        }
+
+
+        else {
+            console.log("The number is not a prime number.");
+        }
+
+
+        // program to print prime numbers between the two numbers
+
+
+        const lowerNumber = parseInt(prompt('Enter lower number: '));
+        const higherNumber = parseInt(prompt('Enter higher number: '));
+
+        console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
+
+        for (let i = lowerNumber; i <= higherNumber; i++) {
+            let flag = 0;
+
+
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+
+            if (i > 1 && flag == 0) {
+                console.log(i);
+            }
+        }
+
+
+        // program to find the factorial of a number
+
+
+        const num = parseInt(prompt('Enter a positive integer: '));
+
+        if (num < 0) {
+            console.log('Error! Factorial for negative number does not exist.');
+        }
+
+
+        else if (num === 0) {
+            console.log(`The factorial of ${num} is 1.`);
+        }
+
+        else {
+            let fact = 1;
+            for (i = 1; i <= num; i++) {
+                fact *= i;
+            }
+            console.log(`The factorial of ${num} is ${fact}.`);
+        }
+
+
+        // program to generate fibonacci series up to n terms
+
+
+        const numb = parseInt(prompt('Enter the number of terms: '));
+        let n1 = 0, n2 = 1, nextTerm;
+
+        console.log('Fibonacci Series:');
+
+        for (let i = 1; i <= numb; i++) {
+            console.log(n1);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+
+
+        // program to generate a multiplication table
+
+        const number1 = parseInt(prompt('Enter an integer: '));
+
+        for (let i = 1; i <= 10; i++) {
+
+
+            const result = i * number1;
+
+
+            console.log(`${number1} * ${i} = ${result}`);
+        }
+
+
+        // program to check an Armstrong number of three digits
+
+        let sum = 0;
+        const number2 = prompt('Enter a three-digit positive integer: ');
+
+
+        let temp = number2;
+        while (temp > 0) {
+
+            let remainder = temp % 10;
+
+            sum += remainder * remainder * remainder;
+
+
+            temp = parseInt(temp / 10);
+        }
+
+        if (sum == number) {
+            console.log(`${number2} is an Armstrong number`);
+        }
+        else {
+            console.log(`${number2} is not an Armstrong number.`);
+        }
+
+
+
+        // program to find Armstrong number between intervals
+
+
+        const lowNumber = parseInt(prompt('Enter a positive low integer value: '));
+        const highNumber = parseInt(prompt('Enter a positive high integer value: '));
+
+        console.log('Armstrong Numbers:');
+
+        for (let i = lowNumber; i <= highNumber; i++) {
+
+
+            let numberOfDigits = i.toString().length;
+
+            let sum = 0;
+
+
+            let temp = i;
+
+
+            while (temp > 0) {
+
+                let remainder = temp % 10;
+                sum += remainder ** numberOfDigits;
+
+                temp = parseInt(temp / 10);
+            }
+
+            if (sum == i) {
+                console.log(i);
+            }
+        }
+
+
+        // program for a simple calculator
+
+        const operator = prompt('Enter operator ( either +, -, * or / ): ');
+
+        const numbeer1 = parseFloat(prompt('Enter first number: '));
+        const numbeer2 = parseFloat(prompt('Enter second number: '));
+
+        let result;
+
+        if (operator == '+') {
+            result = numbeer1 + numbeer2;
+        }
+        else if (operator == '-') {
+            result = numbeer1 - numbeer2;
+        }
+        else if (operator == '*') {
+            result = numbeer1 * numbeer2;
+        }
+        else {
+            result = numbeer1 / numbeer2;
+        }
+
+
+        console.log(`${numbeer1} ${operator} ${numbeer2} = ${result}`);
+
+
+
+
+
+        /* program to check whether the last digit of three
+        numbers is same */
+
+
+        const a1 = prompt('Enter a first integer: ');
+        const b1 = prompt('Enter a second integer: ');
+        const c1 = prompt('Enter a third integer: ');
+
+
+        const result1 = a1 % 10;
+        const result2 = b1 % 10;
+        const result3 = c1 % 10;
+
+
+        if (result1 == result2 && result1 == result3) {
+            console.log(`${a1}, ${b1} and ${c1} have the same last digit.`);
+        }
+        else {
+            console.log(`${a1}, ${b1} and ${c1} have different last digit.`);
+        }
+
+
+
+        // program to find the factors of an integer
+
+      
+        const numm = prompt('Enter a positive number: ');
+
+        console.log(`The factors of ${numm} is:`);
+
+       
+        for (let i = 1; i <= numm; i++) {
+
+           
+            if (numm % i == 0) {
+                console.log(i);
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

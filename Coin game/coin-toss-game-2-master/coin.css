@@ -1,0 +1,97 @@
+*{
+    /* background-image: linear-gradient(to right,black 60%, red 60%); */
+    /* color:white; */
+    
+}
+@keyframes spin {
+    0% {background: url("./h1.png")}
+    
+    25% {background: url("./t1.png")}
+    
+    50% {background: url("./h1.png")}
+    
+    75% {background: url("./t1.png")}
+    
+    100% {background: url("./h1.png")}
+}
+
+
+#image{
+    background: url("./t1.png");
+    width: 200px;
+    height: 200px;
+    
+}
+
+.animate{
+    background: url("./h1.png");
+    width: 200px;
+    height: 200px;
+    animation-name: spin;
+    animation-iteration-count: 2;
+    animation-duration: 1s;
+}
+
+.canvas{
+    width: 60%;
+    height: 640px;
+    margin: 20px auto;
+    text-align: center;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 20px;
+    border: solid rgb(173, 4, 4);
+    border-radius: 18px;
+    background-color: rgba(26, 25, 25, 0.975);
+    color: aliceblue;
+}
+
+#center{
+    width: 227px;
+    margin: 15px auto;
+}
+
+.selection, #player, #computer{
+    display: inline;
+    margin: 25px;
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 20px;
+    width: 120px;
+    border: solid green;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 15px;
+    margin: 20px;
+}
+#xx{
+   color: rgb(160, 253, 222);
+}
+.selection{
+    color: aquamarine;
+    margin: 70px;
+}
+#ps{
+    color: rgb(60, 255, 0);
+}
+#cs{
+    color: rgb(255, 81, 0);
+}
+
+
+#player{
+    color: rgb(255, 81, 0) ;
+}
+#computer{
+    color:rgb(60, 255, 0) ;
+}
+#player-score{
+    color: goldenrod;
+}
+#computer-score{
+    color: goldenrod;
+}
+#make{
+    color: blueviolet;
+}

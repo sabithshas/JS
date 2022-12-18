@@ -1,0 +1,77 @@
+#yy{
+    /* background-color: aqua;  */
+    background-image: url(arm.jpg) ; 
+    background-repeat: no-repeat; 
+    height: 500px; 
+    width: 80%;
+    position: absolute;
+    left: 260px;
+    top: 155px;
+}
+#ext{
+    margin-left: 155px;
+    margin-top: -46px;
+}
+#tt{
+    background-color: black;
+    color: aliceblue;
+}
+#mn{
+    height: 530px;
+    width: 70%;
+    /* background-color:rgba(45,36,26,255); */
+    /* background-color: rgba(99,66,5,255); */
+    /* rgba(111,93,76,255) */
+    background-image: linear-gradient(to right,rgba(45,36,26,255)80%,rgba(99,66,5,255)100%,rgba(111,93,76,255));
+    margin-top: 70px;
+    margin-left: 213px;
+    margin-right: 50px;
+    
+}
+#nn{
+    font-size: 25px;
+    margin-left: 50px;
+    padding-top: 30px;
+    padding-right: 30px;
+    color: azure;
+}
+#ss{
+    color: white;
+    padding-left: 130px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#ds{
+    padding-top: 20px;
+    padding-left: 160px;
+    color: antiquewhite;
+    font-size: 25px;
+}
+#two{
+position: relative;
+top: -5px;
+margin-left: 10px;
+width: 250px;
+height: 30px;
+border: solid;
+border-radius: 50px;
+}
+#ext{
+    color: brown;
+    margin-left: 190px;
+}
+#one{
+    margin-left: 480px;
+    margin-top: 10px;
+    border: solid;
+    height: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+#as{
+    color: beige;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+
+
+
